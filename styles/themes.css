@@ -62,5 +62,6 @@
       ),
       linear-gradient(#007f0c, #004306);
       --contourColor: #00cc14;
+      --button_textColor: #cc00b8;
   }
 }
