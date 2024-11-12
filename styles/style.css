@@ -216,6 +216,12 @@
   transition: outline-color 0.3s ease;
 }
 
+/* Для тачскрина тест */
+.like-icon:not(.is-liked)+.like-icon:not(:hover) .main-body {
+  fill: transparent;
+  transition: fill 0.3s linear 0.05s
+}
+
 /* Закрашивание сердцевины сердца при наведении мыши */
 .like-icon .core {
   fill: transparent;
@@ -424,6 +430,11 @@
 }
 
 /* Стили POPUP */
+
+.popup {
+  display: flex;
+}
+
 .popup[open] {
   max-width: 357px;
   width: 100%;
@@ -436,12 +447,16 @@
   padding: 30px;
   background-color: var(--backgrondColor);
   position: fixed;
-  left: 0;
-  right: 0;
-  top:0;
-  bottom: 0;
+  inset: 0;
   color: var(--Themes-mainColor);
+  transition: opacity 0.3s ease-in-out;
 }
+
+.popup:not([open]) {
+  pointer-events: none;
+  opacity: 0;
+}
+
 
 .popup::backdrop {
   background-color: rgb(0 0 0 / 0.75);
