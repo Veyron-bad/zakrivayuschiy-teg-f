@@ -1,1 +1,26 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --Themes-mainColor: #000;
+  --mainFont: "Inter";
+  --secondaryFont: "PressStart2P";
+  --wght-mainFontCard: 400;
+  --wght-secondaryFontCard: 700;
+  --backgrondColor: #fff;
+  --backgroundGradient: repeating-linear-gradient(
+      90deg,
+      #d3d3d3,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      #d3d3d3,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    linear-gradient(#e7e7e7, #1a1a1a);
+    --button_textColor: #fff;
+    --contourColor: #000;
+    --bodyColor: #FF0000;
+}

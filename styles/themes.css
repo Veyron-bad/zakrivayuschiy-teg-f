@@ -4,3 +4,63 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+
+:root.theme-dark {
+  --backgrondColor: #000;
+  --wght-mainFontCard: 465;
+  --wght-secondaryFontCard: 785;
+  --Themes-mainColor: #00cc14;
+  --backgroundGradient: repeating-linear-gradient(
+      90deg,
+      #000,
+      #000 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(#000, #000 2px, transparent 2px, transparent 4px),
+    linear-gradient(#007f0c, #004306);
+    --button_textColor: #cc00b8;
+    --contourColor: #00cc14;
+}
+
+:root.theme-light {
+  --backgrounColor: #fff;
+  --backgroundGradient: repeating-linear-gradient(
+      90deg,
+      #d3d3d3,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      #d3d3d3,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    linear-gradient(#e7e7e7, #1a1a1a);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root.theme-auto {
+    --backgrondColor: #000;
+    --Themes-mainColor: #00cc14;
+    --wght-mainFontCard: 465;
+    --wght-secondaryFontCard: 785;
+    --backgroundGradient: repeating-linear-gradient(
+        90deg,
+        #000,
+        #000 2px,
+        transparent 2px,
+        transparent 4px
+      ),
+      repeating-linear-gradient(
+        #000,
+        #000 2px,
+        transparent 2px,
+        transparent 4px
+      ),
+      linear-gradient(#007f0c, #004306);
+      --contourColor: #00cc14;
+  }
+}
